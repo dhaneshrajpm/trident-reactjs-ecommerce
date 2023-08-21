@@ -1,8 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from './Home.module.scss';
-
-import HomePreview from "./HomePreview";
 
 const catagories = [
   {
@@ -41,7 +40,13 @@ const Home = () => {
   return (
     <div className={styles.container}>
       {catagories.map(item =>
-        <HomePreview key={item.title} title={item.title} imageUrl={item.imageUrl} />
+        <Link key={item.title} className={styles.link} to={`/shop/${item.title}`} >
+          <img className={styles.img} src={item.imageUrl} alt="home" />
+          <div className={styles.content}>
+            <span>{item.title.toUpperCase()}</span>
+            <span>SHOP NOW</span>
+          </div>
+        </Link>
       )}
     </div>
   )
