@@ -5,7 +5,8 @@
 
   .cartItems {
     height: calc(100vh - 18rem);
-    overflow-y: scroll;
+    overflow-y: auto;
+    width: 20rem;
 
     .item {
       display: flex;
