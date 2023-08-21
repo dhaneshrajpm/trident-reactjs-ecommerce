@@ -6,6 +6,7 @@
   padding: 2rem;
   border-radius: 0.6rem;
   width: 40rem;
+  font-size: 1rem;
 
   &.showBgColor {
     background-color: #fff2f0;
@@ -18,5 +19,9 @@
     .btn {
       @include button;
     }
+  }
+
+  @include desktop {
+    width: 25rem;
   }
 }

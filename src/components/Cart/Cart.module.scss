@@ -1,5 +1,4 @@
 @import '../../styles/index.scss';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .container {
   position: relative;
@@ -9,13 +8,13 @@
   justify-content: center;
 
   .cartIcon {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   .itemCount {
     position: absolute;
-    font-size: 1rem;
+    font-size: .7rem;
     bottom: 1px;
   }
 }

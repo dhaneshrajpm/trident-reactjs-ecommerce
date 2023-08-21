@@ -6,6 +6,7 @@
   padding: 2rem;
   border-radius: 0.6rem;
   width: 40rem;
+  font-size: 1rem;
 
   .formContainer .formButtons {
     display: flex;
@@ -18,7 +19,15 @@
 
     .googleBtn {
       @include button;
-      background-color: #1677ff;
+      background-color: $google-button;
+
+      &:hover {
+        background-color: $google-button-hover;
+      }
     }
+  }
+
+  @include desktop {
+    width: 25rem;
   }
 }

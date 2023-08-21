@@ -26,25 +26,23 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div className={styles.container}>
-      <Suspense fallback={<div className={styles.loading}><Spin size="large" /></div>}>
-        <Routes>
-          <Route path="/" element={<Navigation />}>
-            <Route index element={<Home />} />
-            <Route path="shop" element={<Shop />}>
-              <Route index element={<Catagories />} />
-              <Route path=':categoryId' element={<CategoryPreview />} />
-              <Route path="*" element={<NoMatch />} />
-            </Route>
-            <Route path="signin" element={<Login />} />
-            <Route path="checkout" element={<Checkout />} />
-            <Route path="payment" element={<Payment />} />
-            <Route path="contact" element={<Contact />} />
+    <Suspense fallback={<div className={styles.loading}><Spin size="large" /></div>}>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="shop" element={<Shop />}>
+            <Route index element={<Catagories />} />
+            <Route path=':categoryId' element={<CategoryPreview />} />
             <Route path="*" element={<NoMatch />} />
           </Route>
-        </Routes>
-      </Suspense>
-    </div>
+          <Route path="signin" element={<Login />} />
+          <Route path="checkout" element={<Checkout />} />
+          <Route path="payment" element={<Payment />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoMatch />} />
+        </Route>
+      </Routes>
+    </Suspense>
   )
 };
 

@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
-import './index.scss';
+import './index.css';
 import store from './store';
 import App from './App'
 import reportWebVitals from './reportWebVitals';

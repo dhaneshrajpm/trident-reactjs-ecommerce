@@ -4,9 +4,8 @@
   display: block;
 
   .cartItems {
-    max-height: 44.5rem;
-    width: 30rem;
-    overflow: auto;
+    height: calc(100vh - 18rem);
+    overflow-y: scroll;
 
     .item {
       display: flex;
@@ -39,6 +38,6 @@
 
   .btn {
     @include button;
-    font-family: 'Oswald', sans-serif;
+    font-family: $primaryFont;
   }
 }

@@ -5,8 +5,8 @@
   padding-top: 0;
 
   .table {
-    max-height: 50rem;
-    overflow: auto;
+    height: calc(100vh - 18rem);
+    overflow-y: scroll;
   }
 
   .footer {
@@ -16,13 +16,14 @@
 
     .total {
       text-align: end;
-      font-size: 3rem;
+      font-size: 1rem;
+      font-weight: bold
     }
 
     .checkoutBtn {
       @include button;
       width: 15rem;
-      margin: 1rem;
+      margin: 1rem
     }
   }
 }

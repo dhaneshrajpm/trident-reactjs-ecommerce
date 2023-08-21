@@ -1,8 +1,12 @@
-.container {
-  .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+@import '../src/styles/index.scss';
+
+body {
+  font-family: $primaryFont;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

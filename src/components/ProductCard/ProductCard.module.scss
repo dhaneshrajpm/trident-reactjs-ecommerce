@@ -1,3 +1,5 @@
+@import '../../styles/index.scss';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,7 @@
   .imgContainer {
     display: flex;
     justify-content: center;
-    height: 40rem;
+    height: 25rem;
     position: relative;
 
     .productImg {
@@ -19,19 +21,20 @@
       bottom: 3rem;
       width: 80%;
       border-radius: 0;
-      background-color: rgba($color: #000, $alpha: 0.65);
-      color: #fff;
+      background-color: rgba($color: $black, $alpha: 0.65);
+      color: $white;
       border: 0;
       box-shadow: none;
 
       &:hover {
-        background-color: rgba($color: #000, $alpha: 0.85);
+        background-color: rgba($color: $black, $alpha: 0.85);
       }
     }
 
     &:hover {
       .btn {
         opacity: 1;
+        color: $white;
       }
     }
   }
@@ -40,6 +43,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
