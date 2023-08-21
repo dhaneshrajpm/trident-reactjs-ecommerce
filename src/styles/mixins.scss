@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+@mixin button() {
+  border-radius: 0;
+  background-color: $black;
+  width: 100%;
+  color: $white;
+  font-family: $primaryFont;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
+
+  &:disabled {
+    color: $black;
+    background-color: $white;
+    cursor: not-allowed;
+  }
+}

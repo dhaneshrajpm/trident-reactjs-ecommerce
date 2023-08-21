@@ -1,0 +1,35 @@
+@import '../../styles/index.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem 5rem;
+  text-decoration: none;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-size: 2rem;
+      line-height: 3;
+      font-weight: $fontBold;
+      cursor: pointer;
+    }
+
+    .seeMoreBtn {
+      cursor: pointer;
+      font-weight: $fontRegular;
+      font-size: 1.8rem;
+      line-height: 2;
+      margin-top: 2rem;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}

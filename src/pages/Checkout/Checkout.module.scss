@@ -1,0 +1,28 @@
+@import '../../styles/index.scss';
+
+.container {
+  padding: 5rem;
+  padding-top: 0;
+
+  .table {
+    max-height: 50rem;
+    overflow: auto;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .total {
+      text-align: end;
+      font-size: 3rem;
+    }
+
+    .checkoutBtn {
+      @include button;
+      width: 15rem;
+      margin: 1rem;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import '../../styles/index.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+
+  .checkoutPreview {
+    width: 30%;
+    padding: 2rem;
+
+    .header {
+      margin-top: 0;
+    }
+
+    .pricePreview {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+
+    .overAllTotal {
+      text-align: end;
+    }
+  }
+
+  .paymentContainer {
+    width: 40%;
+    padding: 2rem;
+
+    .button {
+      @include button;
+      height: 3.6rem;
+      margin-top: 2rem;
+    }
+
+    .cardElement {
+      color: #6b7c93;
+      font-weight: 300;
+      letter-spacing: 0.025em;
+      width: 100%;
+      height: 10rem;
+    }
+
+    .cardDateCVC {
+      display: flex;
+      gap: 1rem;
+
+      .cardElement {
+        @extend .cardElement;
+        width: 50%
+      }
+    }
+
+    input,
+    .StripeElement {
+      display: block;
+      margin: 10px 0 20px 0;
+      padding: 10px 14px;
+      font-size: 1em;
+      box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+        rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+      border: 0;
+      outline: 0;
+      border-radius: 4px;
+      background: white;
+    }
+
+    input::placeholder {
+      color: #aab7c4;
+    }
+
+    input:focus,
+    .StripeElement--focus {
+      box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px,
+        rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+      -webkit-transition: all 150ms ease;
+      transition: all 150ms ease;
+    }
+  }
+
+  .demo {
+    position: absolute;
+    display: flex;
+    left: 35%;
+    bottom: 10rem;
+    flex-direction: column;
+    font-size: 2.5rem;
+  }
+}

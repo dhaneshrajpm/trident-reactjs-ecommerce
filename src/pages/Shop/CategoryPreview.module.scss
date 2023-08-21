@@ -1,0 +1,23 @@
+.container {
+  padding: 0 5rem 2rem;
+
+  .header {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    justify-content: flex-start;
+    align-items: center;
+
+    .leftIcon {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: 3rem;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}

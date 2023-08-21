@@ -1,0 +1,24 @@
+@import '../../../styles/index.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  width: 40rem;
+
+  .formContainer .formButtons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+    .btn {
+      @include button;
+    }
+
+    .googleBtn {
+      @include button;
+      background-color: #1677ff;
+    }
+  }
+}

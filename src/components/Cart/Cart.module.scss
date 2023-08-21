@@ -1,0 +1,21 @@
+@import '../../styles/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .cartIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .itemCount {
+    position: absolute;
+    font-size: 1rem;
+    bottom: 1px;
+  }
+}

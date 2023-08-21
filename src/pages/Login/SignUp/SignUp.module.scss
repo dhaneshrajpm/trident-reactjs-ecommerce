@@ -1,0 +1,22 @@
+@import '../../../styles/index.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  width: 40rem;
+
+  &.showBgColor {
+    background-color: #fff2f0;
+  }
+
+  .formContainer .formButtons {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      @include button;
+    }
+  }
+}
